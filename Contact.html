@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR School - Contact Us</title>
+    <link rel="stylesheet" href="sch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <section class="subHeader">
+        <nav>
+            <a href="sch.html"><img src="Images/Logo.png" alt="" class="logo"></a>
+            <div class="navLinks" id="NAVLINKS">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="sch.html">Home</a></li>
+                    <li> <a href="About.html">About</a></li>
+                    <li> <a href="Course.html">Course</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-- Contact us  -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4474.470900203794!2d112.90135057500339!3d-7.637568692378291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7c5db095c80bf%3A0xaee91ce881ac67aa!2sSekolah%20Menengah%20Atas%201%20Pasuruan!5e1!3m2!1sid!2sid!4v1740884337408!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contactUs">
+    <div class="row">
+        <div class="contactCol">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>KELASS Main Campus</h5>
+                    <p>Jl. Veteran No. 11, Pasuruan, Jawa Timur, Indonesia</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+62 812 3456 7890</h5>
+                    <p>Monday to Saturday, 8:00 AM - 4:00 PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@kelass.edu.id</h5>
+                    <p>Email us your query anytime!</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="contactCol">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email Address" required>
+                <input type="text" placeholder="Enter Your Subject" required>
+                <textarea rows="8" placeholder="Your Message" required></textarea>
+                <button type="submit" class="heroBtn redBtn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>KELASS is dedicated to providing exceptional educational experiences through innovative teaching methods, <br>comprehensive curricula, and a supportive learning environment that fosters academic excellence and personal growth.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Irwan Wafi</p>
+    </section>
+
+    <!-- Java Script for toggle menu -->
+    <script>
+        var NAVLINKS = document.getElementById("NAVLINKS");
+
+        function showMenu(){
+            NAVLINKS.style.right="0"; 
+        }
+
+        function hideMenu(){
+            NAVLINKS.style.right="-200px";
+        }
+    </script> 
+</body>
+</html>

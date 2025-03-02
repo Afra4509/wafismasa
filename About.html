@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR School - About Us</title>
+    <link rel="stylesheet" href="sch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <section class="subHeader">
+        <nav>
+            <a href="sch.html"><img src="Images/Logo.png" alt="" class="logo"></a>
+            <div class="navLinks" id="NAVLINKS">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="sch.html">Home</a></li>
+                    <li> <a href="About.html">About</a></li>
+                    <li> <a href="Course.html">Course</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- about us content -->
+    <section class="aboutUs">
+        <div class="row">
+            <div class="aboutCol">
+                <h1>KELASS - Your Path to Excellence</h1>
+                <p>Founded in 2010, KELASS has been committed to providing high-quality education that empowers students to reach their full potential. Our innovative teaching methods, dedicated faculty, and state-of-the-art facilities create an ideal environment for learning and growth.</p>
+                <p>At KELASS, we believe that education goes beyond textbooks. We focus on developing critical thinking, problem-solving skills, and character building that prepares students for the challenges of the modern world.</p>
+                <p>Our mission is to inspire and nurture the next generation of leaders, innovators, and responsible citizens who will make positive contributions to society.</p>
+                <a href="Course.html" class="heroBtn redBtn">Explore Our Courses</a>
+            </div>
+            <div class="aboutCol">
+                <img src="Images/Aghabetter.JPG" alt="KELASS Campus">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>KELASS is dedicated to providing exceptional educational experiences through innovative teaching methods, <br>comprehensive curricula, and a supportive learning environment that fosters academic excellence and personal growth.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Irwan Wafi</p>
+    </section>
+
+    <!-- Java Script for toggle menu -->
+    <script>
+        var NAVLINKS = document.getElementById("NAVLINKS");
+
+        function showMenu(){
+            NAVLINKS.style.right="0"; 
+        }
+
+        function hideMenu(){
+            NAVLINKS.style.right="-200px";
+        }
+    </script> 
+</body>
+</html>
